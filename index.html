@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
- <meta charset="UTF-8">
- <title>Axel F.s första Webb på Github</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kir Asså Vinet – Den eviga klassikern</title>
+  <meta name="description" content="Kir. Crème de cassis + vin. Asså den där drinken som alltid funkar. Retro men alltid aktuell.">
+  <style>
+    :root {
+      --purple: #5e2d79;
+      --pink: #e89bc4;
+      --light: #fff5f9;
+      --dark: #2d112e;
+      --gray: #6b4e6d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, var(--light), #f8e1ed);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--purple) 0%, #8a4a9c 100%);
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-size: 4.2rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+    }
+
+    header .subtitle {
+      font-size: 1.9rem;
+      opacity: 0.95;
+      font-style: italic;
+    }
+
+    .tagline {
+      font-size: 2.4rem;
+      margin: 2rem 0;
+      font-weight: bold;
+      color: var(--pink);
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    section {
+      margin-bottom: 5rem;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(94,45,121,0.12);
+    }
+
+    h2 {
+      color: var(--purple);
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+      margin: 2.5rem 0;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.04);
+    }
+
+    .recipe {
+      background: #fff8fb;
+      padding: 2rem;
+      border-radius: 12px;
+      border: 2px dashed var(--pink);
+      max-width: 600px;
+      margin: 2rem auto;
+    }
+
+    .recipe h3 {
+      color: var(--purple);
+      text-align: center;
+    }
+
+    .btn {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      padding: 1rem 2.5rem;
+      background: var(--purple);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.3rem;
+      border-radius: 50px;
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--pink);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--gray);
+      font-size: 0.95rem;
+      background: rgba(94,45,121,0.05);
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 700px) {
+      header h1 { font-size: 3.2rem; }
+      .tagline { font-size: 1.9rem; }
+    }
+  </style>
 </head>
 <body>
- <h1>AI1 – Mitt projekt</h1>
- <p>Detta är en enkel webbsida publicerad januari med GitHub Pages.</p>
+
+  <header>
+    <h1>Kir</h1>
+    <div class="subtitle">asså vinet</div>
+    <div class="tagline">den enda drinken som förstår oss</div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Den eviga klassikern</h2>
+      <p style="font-size:1.3rem; text-align:center; max-width:700px; margin:0 auto;">
+        En skvätt svartvinbärssirap. Resten vin. Eller bubbel om man vill vara fancy.<br>
+        Asså den där drinken som alltid är okej. På förfesten. Afterwork. Studentflaken. Mors dag. Alltid.
+      </p>
+
+      <div class="gallery">
+        <!-- Här kommer bilderna från sökresultaten – snygga Kir-bilder -->
+        <img src="https://drinksworld.com/wp-content/uploads/Kir-04-scaled.jpg" alt="Klassisk Kir i vinglas">
+        <img src="https://robbreport.com/wp-content/uploads/2023/12/KirRoyale.jpg?w=1000" alt="Kir Royale med bubbel">
+        <img src="https://alcipedia.com/wp-content/uploads/Kir-Royal-Recept.jpg" alt="Rosa och festlig Kir Royale">
+        <img src="https://drinksworld.com/wp-content/uploads/Kir-02-scaled.jpg" alt="Kir med svartvinbärslikör">
+      </div>
+    </section>
+
+    <section class="recipe">
+      <h2>Hemmagjord Kir – Basic edition</h2>
+      <ul style="font-size:1.2rem; list-style:none;">
+        <li>1½–2 cl crème de cassis (svartvinbärslikör)</li>
+        <li>Fyll upp med torrt vitt vin (billig Chardonnay eller Aligoté → perfekt)</li>
+        <li>Isbitar (valfritt men rekommenderas)</li>
+        <li>Rör lätt – klart!</li>
+      </ul>
+
+      <h3>Lyxvariant: Kir Royale</h3>
+      <p>Byt ut vinet mot kall prosecco/champagne → instant festkänsla</p>
+
+      <a href="https://www.systembolaget.se/" class="btn" target="_blank">Köp cassis & vin →</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 – Kir Asså Vinet-fansklubben • "Asså det är typ det enda som funkar"</p>
+  </footer>
+
 </body>
 </html>
