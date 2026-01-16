@@ -1,1 +1,167 @@
-rawr
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ljummen Långburk – Den svenska folksjälen</title>
+  <meta name="description" content="Ljummen långburk. Arboga 10,2. Budvar 50 cl. Varmboga. Iskall eller ljummen – den funkar alltid. Svensk kultur i burkform.">
+  <style>
+    :root {
+      --gold: #d4a017;
+      --beer: #f2c94c;
+      --dark: #2c1800;
+      --light: #fffaf0;
+      --gray: #8b7355;
+      --red: #c0392b;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(to bottom, var(--light), #ffe8c2);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--gold) 0%, #b8860b 100%);
+      color: var(--dark);
+      text-align: center;
+      padding: 5rem 1rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 4rem;
+      text-shadow: 3px 3px 0 #fff;
+    }
+
+    .tagline {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin: 1rem 0;
+      color: var(--red);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem;
+    }
+
+    section {
+      background: white;
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: var(--gold);
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover { transform: scale(1.05); }
+
+    .facts {
+      background: #fff8e1;
+      padding: 1.8rem;
+      border-radius: 10px;
+      border: 3px dashed var(--beer);
+      max-width: 700px;
+      margin: 2rem auto;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: var(--dark);
+      color: white;
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 3rem; }
+      .tagline { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ljummen Långburk</h1>
+    <div class="tagline">Asså... den funkar ju alltid</div>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Vad är en ljummen långburk egentligen?</h2>
+      <p style="font-size:1.3rem; text-align:center; max-width:800px; margin:0 auto 2rem;">
+        Den 50 cl stora burken. Oftast billig starköl eller klassisk pilsner.<br>
+        Dricks iskall på sommaren. Ljummen efter en timme i solen. Varm som "Varmboga" när man vill köra stunt.<br>
+        Svensk kultur. Folköl i premiumformat. Ingen skäms. Alla har varit där.
+      </p>
+
+      <div class="gallery">
+        <!-- Klassiska svenska långburkar + Varmboga-vibes -->
+        <img src="https://i.redd.it/ouhtzp2c7xz21.jpg" alt="Iskall Arboga Extra Stark långburk">
+        <img src="https://svd.vgc.no/v2/images/f73acb48-cab1-480f-853c-b9916d29cde4?h=630&q=80&upscale=true&w=1200&s=2b0171f9d7ef2947178d3b9039047a9c29a0c342" alt="Varmboga – trenden med uppvärmd Arboga">
+        <img src="https://i.ytimg.com/vi/UjwpeHEVaSU/maxresdefault.jpg" alt="Varmboga i kastrull – svensk innovation">
+      </div>
+    </section>
+
+    <section>
+      <h2>Stjärnorna i långburksfamiljen</h2>
+
+      <div class="facts">
+        <h3>Arboga Extra Stark 10,2%</h3>
+        <p>• Den riktiga bossen. Stark. Maltig. 10,2% som slår till.<br>
+        • Perfekt för Varmboga: Värm till 55°C → blir plötsligt drickbar(are).<br>
+        • Klassisk utmaning: En burk på en minut. Lycka till.</p>
+      </div>
+
+      <div class="facts">
+        <h3>Budvar Original Czech Lager 50 cl</h3>
+        <p>• Den civiliserade långburken. Tjeckisk pilsner-kvalitet.<br>
+        • Saaz-humle, Moravisk malt, artesisvatten.<br>
+        • Går utmärkt både iskall och... ja, ljummen på picknicken.<br>
+        • Känns lite finare än de svenska starksorterna.</p>
+      </div>
+
+      <div class="gallery">
+        <!-- Budvar longcan vibes -->
+        <img src="https://vinborsen-se.imgix.net/9555876.png?fit=fill&w=1200&h=900&pad=40&bg=fff" alt="Budvar 50 cl långburk">
+        <img src="https://quakercitymercantile.com/wp-content/uploads/2020/02/Budvar_Pack_2-1000x833.jpg" alt="Budvar burkpack – klassisk tjeckisk kvalitet">
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Ljummen Långburk-fansklubben • "Bättre ljummen än ingen alls"</p>
+    <p style="margin-top:1rem; opacity:0.8;">Drick ansvarsfullt. Eller värm den i alla fall.</p>
+  </footer>
+
+</body>
+</html>+
